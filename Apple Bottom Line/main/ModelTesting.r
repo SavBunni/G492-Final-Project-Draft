@@ -1,3 +1,5 @@
+# OPEN AND USE IN RSTUDIO
+
 apple_data <- read.csv("bottom_line_Apple_R.csv", header = TRUE, as.is = TRUE)
 options(scipen = 100, digits = 4) 
 
@@ -62,5 +64,11 @@ errors_twfe_train <- train_set$LogProfit - pred_twfe_train
 ME_twfe_train <- mean(errors_twfe_train) 
 RMSE_twfe_train <- sqrt(mean((errors_twfe_train)^2)) 
 c(ME_twfe_train, RMSE_twfe_train)
+
+# Overfitting %
+c(RMSE_twfe_valid, RMSE_twfe_train)
+
+percent_difference = (RMSE_twfe_valid - RMSE_twfe_train) / RMSE_twfe_valid * 100
+percent_difference
 
 

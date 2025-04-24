@@ -12,8 +12,6 @@ The data is cleaned using **Python**. This includes:
 - Standardizing formats
 - Preparing the dataset for regression analysis in Stata and R
 
-## NOTE: bottom_line_Apple_R.csv is not perfectly clean data
-
 ## Modeling
 
 Regression analysis is performed using Stata, including:
